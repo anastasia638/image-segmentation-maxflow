@@ -174,6 +174,6 @@ P2
 
 ## Author
 
-**Meriem Silmi** — Computer Science Student, France
+**Meriem Silmi** — Computer Science Student, France.
 
 [![GitHub](https://img.shields.io/badge/GitHub-anastasia638-black?style=flat-square&logo=github)](https://github.com/anastasia638)
