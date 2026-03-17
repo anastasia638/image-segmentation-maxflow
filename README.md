@@ -71,16 +71,18 @@ After max-flow terminates, perform a BFS/DFS from source on the **residual graph
 ```
 image-segmentation-maxflow/
 ├── src/
-│   ├── main.cpp              # Entry point: argument parsing, I/O
-│   ├── graph.hpp             # Graph abstract data structure (header)
-│   ├── graph.cpp             # Graph implementation: add_edge, BFS
-│   ├── maxflow.hpp           # Max-flow algorithm interface
-│   ├── maxflow.cpp           # Ford-Fulkerson / Edmonds-Karp implementation
-│   ├── image.hpp             # PGM image reader/writer interface
-│   └── image.cpp             # PGM parser and binary output writer
+│   ├── main.cpp              # Entry point: argument parsing, execution
+│   ├── pixel.cpp             # Pixel and image processing logic
+│   ├── pixel.h               # Pixel structure and utilities
+│   └── exemple_affichage_ascii_couleur.cpp          # ASCII visualization helper
+│   
 ├── images/
-│   ├── input/                # Sample PGM grayscale input images
-│   └── output/               # Segmented binary output images
+│   ├── input/               # Original grayscale input images
+│        ├── image.pgm
+│        └── test.ascii.pgm               
+│   └── output/             # Segmentation results
+│       ├── baboo2.pgm
+│       └── image_binaire.pgm              
 ├── tests/
 │   └── test_graph.cpp        # Unit tests for graph and flow functions
 ├── Makefile                  # Build system
